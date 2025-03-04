@@ -68,7 +68,7 @@ services:
     restart: on-failure
 
   shipping:
-    image: shipting:v1
+    image: shipping:v1
     container_name: shipping
     environment:
       - DB_HOST=mysql
@@ -81,7 +81,7 @@ services:
     restart: on-failure
 
   payment:
-    image: paymang:v1
+    image: payment:v1
     container_name: payment
     environment:
       - CART_HOST=cart
